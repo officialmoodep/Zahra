@@ -9,13 +9,13 @@
 
 const SONGS = [
   { title: "نوازش 1",   artist: "تتلو ", url: "https://dl.gisomusic.com/Music/1402/12/16/Amir%20Tataloo%20-%20Navazesh.mp3?_gl=1*1hjqxso*_ga*ODM3OTEwMTE5LjE3ODU4MzUxNjg.*_ga_KEQHMVTX68*czE3ODU4MzUxNjckbzEkZzAkdDE3ODU4MzUxNjckajYwJGwwJGgw" },
-  { title: "خار",   artist: "تتلو", url: "https://dl.gisomusic.com/Music/1402/12/13/Amir%20Tataloo%20-%20Khaar.mp3?_gl=1*f20f1o*_ga*ODM3OTEwMTE5LjE3ODU4MzUxNjg.*_ga_KEQHMVTX68*czE3ODU4MzUxNjckbzEkZzEkdDE3ODU4MzUzODckajYwJGwwJGgw" },
+  { title: "برای تو",   artist: "مهیار", url: "https://dl.rozmusic.com/Music/1405/05/14/Mahyar%20-%20Baraye%20To.mp3" },
   { title: "مال من باش",   artist: "تتلو", url: "https://dl.gisomusic.com/Music/1402/12/16/Amir%20Tataloo%20-%20Male%20Man%20Bash.mp3?_gl=1*1or6lce*_ga*ODM3OTEwMTE5LjE3ODU4MzUxNjg.*_ga_KEQHMVTX68*czE3ODU4MzUxNjckbzEkZzEkdDE3ODU4MzU0ODEkajYwJGwwJGgw" },
   { title: "منو داری",   artist: "مسلک", url: "https://irsv.upmusics.com/dlw/Maslak%20-%20Mano%20Dari%20(320).mp3" },
   { title: "دیگه چی کمه",   artist: "امیر خلوت", url: "https://dl.mokhtalefmusic.com/music/1404/01/25/Amir%20Khalvat%20&%20Darab%20-%20Dige%20Chi%20Kame.mp3" },
-  { title: "خواب عمیق",   artist: "حسین تی ام", url: "https://irsv.upmusics.com/dlw/Hossein%20Tm%20-%20Khab%20Amigh%20(320).mp3" },
+  { title: "عشق ابدی",   artist: "حسین تی ام", url: "https://wirw.ir/uploader/uploads/Tiem-ESHGHE-ABADIM.mp3" },
   { title: "نزار تنها بخوابم شب",   artist: "شایان یو", url: "https://dls.musics-fa.com/tagdl/1402/Shayan%20Yo%20-%20Nazar%20Tanha%20Bekhabam%20(320).mp3" },
-  { title: "جون چشات",   artist: "پوری", url: "https://xx.sahand-music.ir/Archive/G/GodPoori/Poori%20-%20Az%20Khoda%20Betars/Poori%20-%20Az%20Khoda%20Betars/10%20Poori%20-%20June%20Cheshaat.mp3" },
+  { title: "شام مهتاب",   artist: "داریوش", url: "https://xx.sahand-music.ir/Archive/D/Dariush/Dariush%20-%20Gole%20Bita/01%20Shame%20Mahtab.mp3" },
   { title: "وقتی از همه خستم",   artist: "مسلک", url: "https://dl.musictaj.com/song403/bhr/Maslak%20-%20Vaghti%20Az%20Hame%20Khastam.mp3" },
   { title: "مرداب",  artist: "گوگوش", url: "https://xx.sahand-music.ir/Archive/G/Googoosh/Googoosh%20-%20Asheghaneha/04%20Mordab.mp3" }
 ];
