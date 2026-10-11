@@ -15,15 +15,15 @@ const CONFIG = {
   },
 
   /* دقیقاً ۶ عکس برای مکعب */
-  cubePhotos: ["", "", "", "", "", ""],
+  cubePhotos: ["https://cdn.imgurl.ir/uploads/c6762_1791623458249.jpg", "https://cdn.imgurl.ir/uploads/n790085_IMG_20261011_113006_393.jpg", "https://cdn.imgurl.ir/uploads/i97990_IMG_20261011_112948_689.jpg", "https://cdn.imgurl.ir/uploads/a926069_IMG_20261011_112902_523.jpg", "https://cdn.imgurl.ir/uploads/v094819_IMG_20261011_112942_870.jpg", "https://cdn.imgurl.ir/uploads/i97990_IMG_20261011_112948_689.jpg"],
 
   /* هر تعداد عکس برای گالری (هر "" یک جای خالی است) */
-  galleryPhotos: ["", "", "", "", "", ""],
+  galleryPhotos: ["https://cdn.imgurl.ir/uploads/c915008_IMG_20261011_112911_117.jpg", "https://cdn.imgurl.ir/uploads/c6762_1791623458249.jpg", "https://cdn.imgurl.ir/uploads/s606659_6263e6de-e552-4a12-8bdc-e55665d0506a.jpeg", "https://cdn.imgurl.ir/uploads/n83211_1791623422259.jpg", "https://cdn.imgurl.ir/uploads/n790085_IMG_20261011_113006_393.jpg", "https://cdn.imgurl.ir/uploads/a926069_IMG_20261011_112902_523.jpg"],
 
   /* poster = عکس کاور، src = لینک/مسیر ویدیو */
   videos: [
-    { poster: "", src: "" },
-    { poster: "", src: "" },
-    { poster: "", src: "" }
+    { poster: "https://cdn.imgurl.ir/uploads/c915008_IMG_20261011_112911_117.jpg", src: "https://drive.google.com/file/d/1SDNcsdYQ6VO0KJeXwk4pBMJ3UhFZwmPU/view?usp=drivesdk" },
+    { poster: "https://cdn.imgurl.ir/uploads/48436_IMG_20261011_113019_695.jpg", src: "https://drive.google.com/file/d/1SEqcMkrBZkwJW_UPeLZOHH5SGwGrbzUP/view?usp=drivesdk" },
+    { poster: "https://cdn.imgurl.ir/uploads/a926069_IMG_20261011_112902_523.jpg", src: "https://drive.google.com/file/d/1SF64nnl9c3uRvYyyj1N7MJLXSNeOyCc6/view?usp=drivesdk" }
   ]
 };
