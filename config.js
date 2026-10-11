@@ -10,8 +10,8 @@ const CONFIG = {
   startJalali: { y: 1405, m: 7, d: 18, hour: 23, minute: 45 },
 
   music: {
-    url: "https://dls.musics-fa.com/song/alibz/2026/06/Arta%20And%20Korosh%20-%20Khooneye%20Man%20Oonjast%20Musics-Fa.mp3",
-    title: "خونه ی من اونجاست..."
+    url: "https://dl.bandmusic.ir/files/mp3/s1/Dalu%20%E2%80%93%203:33%20(BandMusic).mp3",
+    title: "3:33"
   },
 
   /* دقیقاً ۶ عکس برای مکعب */
