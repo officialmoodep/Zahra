@@ -22,7 +22,7 @@ const CONFIG = {
 
   /* poster = عکس کاور، src = لینک/مسیر ویدیو */
   videos: [
-    { poster: "https://cdn.imgurl.ir/uploads/c915008_IMG_20261011_112911_117.jpg", src: "https://drive.google.com/file/d/1SDNcsdYQ6VO0KJeXwk4pBMJ3UhFZwmPU/view?usp=drivesdk" },
+    { poster: "https://cdn.imgurl.ir/uploads/c915008_IMG_20261011_112911_117.jpg", src: "https://cdn.imgurl.ir/uploads/w107123_VID_20261011_115528_866.mp4" },
     { poster: "https://cdn.imgurl.ir/uploads/48436_IMG_20261011_113019_695.jpg", src: "https://drive.google.com/file/d/1SEqcMkrBZkwJW_UPeLZOHH5SGwGrbzUP/view?usp=drivesdk" },
     { poster: "https://cdn.imgurl.ir/uploads/a926069_IMG_20261011_112902_523.jpg", src: "https://drive.google.com/file/d/1SF64nnl9c3uRvYyyj1N7MJLXSNeOyCc6/view?usp=drivesdk" }
   ]
