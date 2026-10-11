@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#07040f">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>من و زهرا | داستان عشق ما</title>
+<meta name="description" content="از ۱۸ مهر ۱۴۰۵ تا ابد — داستان عشق من و زهرا">
+
+<!-- فونت‌های فارسی از گوگل فونت -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+<!-- آیکون‌ها -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- بوت‌استرپ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+
+<!-- استایل اختصاصی سایت -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= پیش‌بارگذار ================= -->
+<div id="preloader">
+  <div class="preloader-heart"><i class="fa-solid fa-heart"></i></div>
+  <p>در حال آماده‌سازی عشق...</p>
+</div>
+
+<!-- ================= پس‌زمینه‌ی ستاره و ذرات شناور در کل سایت ================= -->
+<div id="starfield"></div>
+<div id="floating-hearts"></div>
+
+<!-- ================= پخش‌کننده موزیک (گوشه‌ی سایت) ================= -->
+<div class="music-widget" id="musicWidget">
+  <button class="vinyl" id="vinylDisc" title="پخش / توقف موزیک">
+    <i class="fa-solid fa-music"></i>
+  </button>
+  <div class="music-info">
+    <span id="musicLabel">برای پخش موزیک لمس کن</span>
+  </div>
+  <audio id="bgAudio" loop preload="auto"></audio>
+</div>
+
+<!-- ================= نوبار ================= -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#hero"><i class="fa-solid fa-heart-pulse me-2"></i><span id="brandName">زهرا</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav gap-lg-3 text-center">
+  <li class="nav-item"><a class="nav-link" href="#timer">شمارش عشق</a></li>
+  <li class="nav-item"><a class="nav-link" href="#letter">نامه</a></li>
+  <li class="nav-item"><a class="nav-link" href="#timeline">خاطرات</a></li>
+  <li class="nav-item"><a class="nav-link" href="#galaxy">کهکشان عشق</a></li>
+  <li class="nav-item"><a class="nav-link" href="#gallery">گالری عکس</a></li>
+  <li class="nav-item"><a class="nav-link" href="#videos">گالری فیلم</a></li>
+  <li class="nav-item"><a class="nav-link" href="#musicGallerySection">گالری موسیقی</a></li>
+</ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= هیرو ================= -->
+<header id="hero">
+  <div class="hero-glow"></div>
+  <div class="container text-center hero-content">
+    <p class="eyebrow">داستان عشق</p>
+    <h1 class="hero-title">من و <span id="heroName">زهرا</span></h1>
+
+    <!-- قلب سه‌بعدی -->
+    <div class="heart-stage" id="heartStage">
+      <div class="heart-glow"></div><div class="heart-tilt"><div class="heart-rot" id="heartRot"></div></div>
+    </div>
+
+    <p class="hero-sub">از <span class="highlight-date">۱۸ مهر ۱۴۰۵، ساعت ۲۳:۴۵</span> تا ابدِ ابد، رابطه‌ی ما همچنان جریان دارد...</p>
+    <div id="greetingBanner" class="greeting-banner"></div>
+    <a href="#timer" class="btn btn-love mt-4"><i class="fa-solid fa-infinity me-2"></i>شمارش لحظه‌ها</a>
+  </div>
+  <div class="scroll-cue"><i class="fa-solid fa-chevron-down"></i></div>
+</header>
+
+<!-- ================= تایمر سه‌بعدی ================= -->
+<section id="timer" class="section-pad">
+  <div class="container text-center">
+    <p class="eyebrow">لحظه به لحظه</p>
+    <h2 class="section-title">زمانی که از آشنایی ما گذشته</h2>
+    <p class="section-desc">این عدد هرگز متوقف نمی‌شود، دقیقاً مثل حس ما به هم</p>
+
+    <div class="flip-clock" id="flipClock">
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="years"><span class="num">۰۰</span></div>
+        <span class="flip-label">سال</span>
+      </div>
+      <div class="flip-sep">:</div>
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="months"><span class="num">۰۰</span></div>
+        <span class="flip-label">ماه</span>
+      </div>
+      <div class="flip-sep">:</div>
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="days"><span class="num">۰۰</span></div>
+        <span class="flip-label">روز</span>
+      </div>
+      <div class="flip-sep">:</div>
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="hours"><span class="num">۰۰</span></div>
+        <span class="flip-label">ساعت</span>
+      </div>
+      <div class="flip-sep">:</div>
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="minutes"><span class="num">۰۰</span></div>
+        <span class="flip-label">دقیقه</span>
+      </div>
+      <div class="flip-sep">:</div>
+      <div class="flip-unit">
+        <div class="flip-card" data-unit="seconds"><span class="num">۰۰</span></div>
+        <span class="flip-label">ثانیه</span>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5 g-3">
+      <div class="col-6 col-md-3">
+        <div class="mini-stat">
+          <i class="fa-solid fa-calendar-heart"></i>
+          <span id="totalDaysStat">۰</span>
+          <small>مجموع روزها</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="mini-stat">
+          <i class="fa-solid fa-heart-circle-check"></i>
+          <span id="totalHoursStat">۰</span>
+          <small>مجموع ساعت‌ها</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="mini-stat">
+          <i class="fa-solid fa-heartbeat"></i>
+          <span id="totalMinutesStat">۰</span>
+          <small>مجموع دقیقه‌ها</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="mini-stat next-anniversary">
+          <i class="fa-solid fa-cake-candles"></i>
+          <span id="nextAnniversaryStat">۰</span>
+          <small id="nextLabel">روز تا ماهگرد بعدی</small>
+        </div>
+      </div>
+    </div>
+    <div class="milestone"><span id="msText"></span><div class="bar"><b id="msBar"></b></div></div>
+  </div>
+</section>
+
+<!-- ================= نامه ================= -->
+<section id="letter" class="section-pad">
+  <div class="container">
+    <p class="eyebrow text-center">برای تو</p>
+    <h2 class="section-title text-center">نامه‌ی من برای <span id="letterName">زهرا</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="letter-card">
+          <i class="fa-solid fa-quote-right quote-icon"></i>
+
+          <p>
+            زهرا جان، از ۱۸ مهر ۱۴۰۵ که راه‌مان به هم رسید، هر روزش برایم مثل یک هدیه‌ی تازه بوده.
+            این سایت را ساختم تا هر لحظه که سراغش بیایی، ببینی زمان چقدر از بودن با تو گذشته
+            و بدانی که این عدد قرار نیست هیچ‌وقت متوقف شود. دوستت دارم، همین حالا و همیشه.
+          </p>
+          <span class="signature">— همیشه مالِ تو</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= خط زمان خاطرات ================= -->
+<section id="timeline" class="section-pad">
+  <div class="container">
+    <p class="eyebrow text-center">مسیر ما</p>
+    <h2 class="section-title text-center">خاطره‌های ما</h2>
+    <p class="section-desc text-center">خاطره هایی رو که ساختیم جایگزین میکنیم اینجا✏️</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"><i class="fa-solid fa-star"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-date">۱۸ مهر ۱۴۰۵</span>
+          <h5>شروع همه‌چیز</h5>
+          <p>روزی که اسم زهرا توی زندگیم یه معنی جدید گرفت.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><i class="fa-solid fa-message-heart"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-date">اولین مکالمه</span>
+          <h5>اولین حرف‌ها</h5>
+          <p>یادت میاد چقدر ساده و قشنگ شروع شد؟</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-date">اولین قرار</span>
+          <h5>اولین دیدار</h5>
+          <p>یه خاطره‌ی کوچیک از اولین باری که کنار هم بودیم.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><i class="fa-solid fa-infinity"></i></div>
+        <div class="timeline-card">
+          <span class="timeline-date">تا ابد...</span>
+          <h5>ادامه‌ی مسیر</h5>
+          <p>و این داستان همچنان ادامه داره، فصل به فصل.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= کهکشان عشق (بخش سه‌بعدی) ================= -->
+<section id="galaxy" class="section-pad">
+  <div class="container text-center">
+    <p class="eyebrow">جهانِ ما</p>
+    <h2 class="section-title">کهکشان عشق</h2>
+    <p class="section-desc">یک مکعب سه‌بعدی از قشنگ‌ترین لحظه‌ها، که مثل عشقمون بی‌وقفه می‌چرخه</p>
+
+    <div class="cube-stage">
+      <div class="cube" id="loveCube"><!-- شش وجه با جاوااسکریپت از روی لینک‌های config.js ساخته می‌شود --></div>
+    </div>
+    <p class="cube-hint"><i class="fa-solid fa-hand-pointer me-1"></i>موس رو ببر روش تا لحظه‌ای بایسته</p>
+  </div>
+</section>
+
+<!-- ================= گالری عکس ================= -->
+<section id="gallery" class="section-pad">
+  <div class="container">
+    <p class="eyebrow text-center">خاطرات تصویری</p>
+    <h2 class="section-title text-center">گالری عکس</h2>
+
+
+    <div class="row g-3 gallery-grid" id="galleryGrid"><!-- ساخته می‌شود با جاوااسکریپت --></div>
+  </div>
+</section>
+
+<!-- ================= گالری فیلم ================= -->
+<section id="videos" class="section-pad">
+  <div class="container">
+    <p class="eyebrow text-center">خاطرات متحرک</p>
+    <h2 class="section-title text-center">گالری فیلم</h2>
+
+
+    <div class="row g-3" id="videoGrid"><!-- ساخته می‌شود با جاوااسکریپت --></div>
+  </div>
+</section>
+
+<!-- ================= فوتر ================= -->
+<footer class="text-center">
+  <div class="container">
+    <i class="fa-solid fa-heart footer-heart"></i>
+    <p>ساخته شده با عشق، برای <span id="footerName">زهرا</span></p>
+    <p class="small">۱۸ مهر ۱۴۰۵ · تا ابد</p>
+    <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<!-- ================= مودال عکس (لایت‌باکس) ================= -->
+<div class="modal fade" id="lightboxModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content lightbox-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      <img id="lightboxImg" src="" alt="عکس">
+    </div>
+  </div>
+</div>
+
+<!-- ================= مودال ویدیو ================= -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content lightbox-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      <video id="modalVideo" controls style="width:100%;border-radius:12px;"></video>
+    </div>
+  </div>
+</div>
+
+<!-- ================= کتابخانه‌ها ================= -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="config.js"></script>
+<script src="main.js"></script>
+<script src="greeting.js"></script>
+<script src="clock.js"></script>
+<script src="love-fx.js"></script>
+<script src="music-gallery.js"></script>
+</body>
+</html>
